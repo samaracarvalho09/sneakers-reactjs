@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapperProduct {
+  display: flex;
+  border: 1px solid pink;
+  padding-inline: 50px;
+}
+
+.productImage {
+  width: 50%;
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productInfo {
+  width: 50%;
+  border: 1px solid blue;
+}
+
+.companyTitle {
+  color: #ff7d1a;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.productTitle {
+  font-size: 28px;
+  color: black;
+  max-width: 280px;
+
+  line-height: 2rem;
+  padding-top: 10px;
+}
+
+.productDescription {
+  font-size: 16px;
+  color: hsl(219, 9%, 45%);
+
+  padding-block: 28px 22px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.pricePercentContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.priceContainer span:first-child {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.priceContainer .pricePercentContainer span:nth-child(2) {
+  color: #ff7d1a;
+  padding: 6px 10px;
+  background: rgb(100%, 49%, 10%, 0.1);
+  border-radius: 10px;
+}
+
+.priceContainer > span {
+  font-weight: 600;
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+}
+
+.wrapperButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.quantityItemContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: min-content;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: hsl(223, 64%, 98%);
+}
+
+.quantityItemCard {
+  color: black;
+}
+
+.quantityItemContainer button img {
+  width: 12px;
+}
+
+.quantityItemContainer button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.addButton {
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ff7d1a;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button img {
+  width: 20px;
+}
+
+/* Galeria de imagens*/
+
+.wrapperMinImage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperMinImage img {
+  width: 130px;
+  border-radius: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.wrapperMinImage img:hover {
+  opacity: 100;
+}
+
+
+.activeImage img {
+  width: calc(100% - 40px);
+  padding: 20px;
+}
