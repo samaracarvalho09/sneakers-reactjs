@@ -12,9 +12,9 @@ import shoesFourth from "../../assets/image-product-4.jpg";
 import styles from "../Product/styles.module.css";
 import { useState } from "react";
 
-export function Product() {
-  const [quantityItem, setQuantityItem] = useState(0);
+export function Product({ updateQuantityItem}) {
 
+  const [quantityItem, setQuantityItem] = useState(0);
   const [activeImage, setActiveImage] = useState(shoesFirst);
 
   function removeItem() {
@@ -26,6 +26,12 @@ export function Product() {
   function handleImageClick(e) {
     const imagemAdress = e.target.src;
     setActiveImage(imagemAdress);
+  }
+
+  
+  function addToCart() {
+    setQuantityItem(quantityItem);
+    updateQuantityItem(quantityItem );
   }
 
   return (
@@ -78,7 +84,7 @@ export function Product() {
               <img src={iconPlus} />
             </button>
           </div>
-          <button className={styles.addButton}>
+          <button className={styles.addButton} onClick={addToCart}>
             <img src={card} />
             Add to cart
           </button>
