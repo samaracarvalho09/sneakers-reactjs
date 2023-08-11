@@ -1,0 +1,94 @@
+.wrapperModal {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  right: 78px;
+  /* width: 300px; */
+  padding: 20px;
+  margin-block: 18px;
+  top: 87px;
+  border: 1px solid red;
+  background-color: white;
+
+  
+}
+
+.modal-open {
+  display: flex;
+  gap: 10px;
+}
+
+/* .productImage {
+  width: 65px;
+
+} */
+
+.productImage img {
+  max-width: 60px;
+  border-radius: 5px;
+}
+
+.wrapperInfoProduct {
+  display: flex;
+
+  
+}
+
+.informationProduct {
+  display: flex;
+  flex-direction: column;
+}
+
+.deleteIcon {
+  width: 16px;
+  height: 18px;
+}
+
+.descriptionPriceProduct {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* flex-direction: column; */
+}
+
+.descriptionPriceProduct button {
+  border: none;
+  cursor: pointer;
+}
+span {
+  font-size: 14px;
+    color: hsl(219, 9%, 45%);
+}
+
+.titleModal {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid  hsl(220, 14%, 75%);
+}
+
+.priceContainer {
+  display: flex;
+  gap: 5px;
+}
+
+
+
+.priceContainer span:nth-child(4) {
+  color: black;
+}
+
+.checkoutButton {
+  width: 100%;
+  /* height: 46px; */
+  padding-block: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+  background-color: #FF7D1A;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}

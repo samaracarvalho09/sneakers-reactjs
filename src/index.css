@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   background-color: #fff;
 
   font-synthesis: none;
@@ -14,8 +14,10 @@
 }
 
 body {
-width: 1440px;
-width: 100%
-heigth: 100%;
+/* width: 100%; */
+margin-inline: 74px;
+overflow: hidden;
+padding-inline: 50px;
+
 }
 
