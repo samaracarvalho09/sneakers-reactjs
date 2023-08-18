@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
+<<<<<<< HEAD
 // import styles from "../Modal/styles.css";
+=======
+import styles from "../Modal/styles.css";
+>>>>>>> d72bce2682a43fc809994e20fdaeedd41c28e46d
 import trash from "../../assets/icon-delete.svg";
 // import productAddCart from '../../assets/imagem-product-1-thumbnail.jpg'
 // import imageProduct from '../../assets/'

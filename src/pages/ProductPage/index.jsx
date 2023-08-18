@@ -35,6 +35,7 @@ export function ProductPage(props) {
   }
 
 
+<<<<<<< HEAD
   // function getProduct() {
   //   const foundProduct = ShoesProvider.find((item) => {
   //     return item.id == id;
@@ -52,6 +53,25 @@ export function ProductPage(props) {
   //   const imagemAdress = e.target.src;
   //   setActiveImage(imagemAdress);
   // }
+=======
+  function getProduct() {
+    const foundProduct = ShoesProvider.find((item) => {
+      return item.id == id;
+    });
+
+    setProduct(foundProduct);
+
+    // Recupera a quantidade do localStorage para inserir no estado inicial
+
+    const storedQuantity = localStorage.getItem(`quantity_${product?.id}`)
+  }
+
+
+  function handleImageClick(e) {
+    const imagemAdress = e.target.src;
+    setActiveImage(imagemAdress);
+  }
+>>>>>>> d72bce2682a43fc809994e20fdaeedd41c28e46d
 
   function addToCart() {
     addProduct(product);
@@ -70,8 +90,13 @@ console.log(productCount)
 
 
 
+<<<<<<< HEAD
 // const storedQuantity = localStorage.setItem("teste", JSON.stringify(productCount))
 
+=======
+const storedQuantity = localStorage.setItem("teste", JSON.stringify(productCount))
+const ini
+>>>>>>> d72bce2682a43fc809994e20fdaeedd41c28e46d
 
 (() => {
 

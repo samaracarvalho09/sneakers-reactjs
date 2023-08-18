@@ -5,7 +5,11 @@ import card from "../../assets/card.svg";
 import logo from "../../assets/logo.svg";
 import avatar from "../../assets/image-avatar.png";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 // import { Modal } from "../Modal";
+=======
+import { Modal } from "../Modal";
+>>>>>>> d72bce2682a43fc809994e20fdaeedd41c28e46d
 
 export default function Header({ quantityCart }) {
   const [activeItem, setActiveItem] = useState("Women");
@@ -81,8 +85,8 @@ export default function Header({ quantityCart }) {
       </div>
 
       <div className={styles.wrapperAvatarCard}>
-        <div className={styles.wrapperCard}>
-          <span className={styles.quantityItemAddCard}>{quantityItem}</span>
+        <div className={styles.wrapperCard} onClick={toggleModal}>
+          <span className={styles.quantityItemAddCard}>{quantityCart}</span>
           <img className={styles.iconCard} src={card} alt="ícone card" />
         </div>
 
